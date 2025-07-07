@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node backend/app.js",
-    "dev": "nodemon backend/app.js",
+    "dev": "NODE_ENV=DEVELOPMENT nodemon backend/app.js",
+    "prod": "cross-env NODE_ENV=PRODUCTION nodemon backend/app.js",
     "seeder": "node backend/seeder/seeder.js"
   },
   "author": "prathamesh",
@@ -26,6 +27,7 @@
     "stripe": "^17.5.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "nodemon": "^3.1.7"
   }
 }

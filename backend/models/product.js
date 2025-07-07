@@ -90,8 +90,4 @@ const productSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export default mongoose.model("Product", productSchema); //here we create model Product on the basis of schema productSchema
-//We have save the user in the product schema that has created product
-//user that has created basically product
-//timestamps: true =>to get the created and updated add field in your documents that is goging to contain the date
-//type: mongoose.Schema.Types.ObjectId : This is the id of the user
+export default mongoose.model("Product", productSchema); 
